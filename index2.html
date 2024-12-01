@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Taking Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #7e91ff, #ff525e, #dd2476);
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.244);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(11, 11, 11, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.051);
+      text-align: center;
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .container h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      color: #f1f1f1;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .submit-btn {
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Floating Particles */
+    .particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .particle:nth-child(1) {
+      width: 50px;
+      height: 50px;
+      top: 10%;
+      left: 20%;
+      animation-duration: 6s;
+    }
+
+    .particle:nth-child(2) {
+      width: 30px;
+      height: 30px;
+      top: 70%;
+      left: 80%;
+      animation-duration: 8s;
+    }
+
+    .particle:nth-child(3) {
+      width: 60px;
+      height: 60px;
+      top: 40%;
+      left: 50%;
+      animation-duration: 10s;
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Note Taking Page</h1>
+    <p>Each note you write is a step closer to turning your ideas into reality. Keep writing, because every small note has the potential to create big changes.</p>
+    <a class="submit-btn" href="index.html">Go to Index Page</a>
+  </div>
+
+  <!-- Particles -->
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</body>
+</html>

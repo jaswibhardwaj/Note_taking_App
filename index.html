@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header Section with Theme Toggle -->
+    <header>
+      <a href="index2.html" class="back-btn">⬅ Back</a> <!-- Back Button -->
+      <h1 class="border-text">My Notes</h1>
+      <button id="theme-toggle" class="theme-toggle">'☀️'</button>
+    </header>
+
+    <!-- Add New Note Button -->
+    <button id="add-note-btn" class="add-note-btn">Add New Note</button>
+    <h2 class="border-text">Hay! write your note here</h2>
+
+
+    <!-- Notes Display Area -->
+    <div id="notes-container" class="notes-container"></div>
+  </div>
+
+  <!-- Restore Note Button -->
+  <button id="restore-btn" class="restore-btn">Restore Deleted Note</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
